@@ -2,124 +2,33 @@
 
 **Matheheft Digital** is an educational math training app for practicing written calculation methods.
 
-The project was built as a focused learning tool for students who need step-by-step practice with arithmetic and basic algebra tasks. It supports profile creation, exercise selection, written calculation grids, feedback, scoring, leaderboards, and a teacher dashboard with learning insights.
-
-The app was primarily tested as a web app. An Android APK build was also created and tested, but mobile behavior may still need additional polish depending on device and screen size.
+The app focuses on structured practice, guided feedback, and a clean learning flow for arithmetic exercises. It was built as a usable learning prototype and portfolio project.
 
 ## Status
 
 **Usable learning prototype / portfolio project**
 
-Matheheft Digital is functional and usable for training purposes.  
-It is not a commercial EdTech product, but a private educational project with a strong focus on deterministic task generation, structured feedback, and transparent learning progress.
+The app was primarily tested as a web app. An Android APK build was also created and tested, but mobile behavior may still need additional polish depending on device/screen size.
+
+Matheheft Digital is not a certified educational product or complete school platform. It is a private learning and portfolio project focused on deterministic task generation, structured feedback, and transparent learning progress.
 
 ## Features
 
-- Student profile creation with avatar selection
-- Exercise selection by topic and difficulty
-- Practice modes:
-  - Classic
-  - Time
-  - Test/Exam mode
-- Written calculation grid
-- Addition, subtraction, multiplication, division basics
-- 1x1 practice
-- Basic algebra/term exercises
-- Step-by-step feedback
-- Score and session summary
-- Highscore/leaderboard view
-- Teacher dashboard with learning insights
-- Skill profile visualization
-- Basic cognitive-load / focus indicators
-- Deterministic task generation
-- Developer diagnostic overlay
-
-## Screenshots
-
-```md
-![Profile selection](docs/screenshots/matheheft-profile.png)
-![Create profile](docs/screenshots/matheheft-create-profile.png)
-![Exercise selection](docs/screenshots/matheheft-exercises.png)
-![Written calculation](docs/screenshots/matheheft-calculation.png)
-![Session complete](docs/screenshots/matheheft-session-complete.png)
-![Leaderboard](docs/screenshots/matheheft-leaderboard.png)
-![Teacher dashboard](docs/screenshots/matheheft-teacher-dashboard.png)
-![Error feedback](docs/screenshots/matheheft-feedback.png)
-````
-
-## Tech Stack
-
-* React
-* TypeScript
-* Tailwind CSS
-* Vite
-* Framer Motion
-* Vitest
-
-## Architecture Highlights
-
-The project is structured around deterministic and testable learning flows:
-
-* **Math engines:** deterministic calculation logic
-* **Grid system:** matrix-based written calculation layout
-* **Pedagogy layer:** feedback and error analysis
-* **State machine controller:** session and task flow management
-* **Adaptive task generator:** seed-based task generation
-* **UX flow engine:** focus handling, navigation, and guided input
-* **Observability tools:** telemetry, replay, and diagnostic overlay
-
-## Developer Tools
-
-Press:
-
-```text
-CTRL + ALT + D
-```
-
-to open the diagnostic overlay.
-
-The diagnostic view shows internal state, seed data, expected values, and validation results.
-
-## Getting Started
-
-### Prerequisites
-
-* Node.js
-
-### Install dependencies
-
-```bash
-npm install
-```
-
-### Run tests
-
-```bash
-npm run test
-```
-
-### Run locally
-
-```bash
-npm run dev
-```
-
-The app is available at:
-
-```text
-http://localhost:3000
-```
-
-## Android Build Note
-
-An Android APK build was created and tested during development.
-The desktop/web version currently provides the most stable layout. Some Android screen sizes may require additional UI polish.
-
-## Notes
-
-This project was built as a private educational tool and learning/portfolio project. It demonstrates interactive training flows, deterministic task generation, feedback-driven learning, and dashboard-style learning analytics.
-
-
+* Student profile creation with avatar selection
+* Exercise selection by topic and difficulty
+* Practice modes for classic, timed, and test-style sessions
+* Written calculation grid
+* Addition, subtraction, multiplication, and division practice
+* 1x1 / basic arithmetic practice
+* Basic algebra and term exercises
+* Step-by-step feedback
+* Score and session summary
+* Highscore / leaderboard view
+* Teacher dashboard with learning insights
+* Skill profile visualization
+* Basic cognitive-load and focus indicators
+* Deterministic task generation
+* Developer diagnostic overlay
 
 ## Screenshots
 
@@ -138,3 +47,67 @@ This project was built as a private educational tool and learning/portfolio proj
 <img width="1477" height="843" alt="Screenshot 2026-06-30 160609" src="https://github.com/user-attachments/assets/4f4684df-f23a-4c51-9f36-b69df97916fe" />
 
 <img width="1482" height="835" alt="Screenshot 2026-06-30 160545" src="https://github.com/user-attachments/assets/a9642347-3ff7-4c52-8e30-21c864179326" />
+
+## Tech Stack
+
+* React
+* TypeScript
+* Vite
+* Tailwind CSS
+* Vitest
+
+## Architecture Highlights
+
+The project is structured around deterministic and testable learning flows:
+
+* Math engines for written calculation tasks
+* Matrix-based written calculation layout
+* Feedback and error analysis layer
+* Session and task-flow controller
+* Seed-based task generation
+* Focus handling, navigation, and guided input
+* Telemetry, replay, and diagnostic tooling
+
+## Developer Tools
+
+Press `CTRL + ALT + D` to open the diagnostic overlay.
+
+The diagnostic view shows internal state, seed data, expected values, and validation results.
+
+## Getting Started
+
+### Prerequisites
+
+* Node.js
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run locally
+
+```bash
+npm run dev
+```
+
+The dev server uses the Vite script from `package.json` and runs on:
+
+```text
+http://localhost:3000
+```
+
+### Run tests
+
+```bash
+npm run test
+```
+
+## Android Build Note
+
+The app was primarily tested as a web app. An Android APK build was also created and tested, but mobile behavior may still need additional polish depending on device/screen size.
+
+## Notes
+
+This is a portfolio/learning prototype, not a certified educational product. The focus is on interactive math practice, deterministic task generation, feedback-driven learning, and dashboard-style learning analytics.
