@@ -117,3 +117,7 @@ The app was primarily tested as a web app. An Android APK build was also created
 ## Notes
 
 This is a portfolio/learning prototype, not a certified educational product. The focus is on interactive math practice, deterministic task generation, feedback-driven learning, and dashboard-style learning analytics.
+
+## License
+
+MIT License. See [LICENSE](LICENSE).
