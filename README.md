@@ -12,6 +12,12 @@ The app was primarily tested as a web app. An Android APK build was also created
 
 Matheheft Digital is not a certified educational product or complete school platform. It is a private learning and portfolio project focused on deterministic task generation, structured feedback, and transparent learning progress.
 
+## Live Demo
+
+Try the app here:
+
+[Open Matheheft Digital](https://matheheft-digital.vercel.app)
+
 ## Features
 
 * Student profile creation with avatar selection
